@@ -3,14 +3,15 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>DjangoProject1</Name>
+    <Name>Trademarks</Name>
     <RootNamespace>DjangoProject1</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>17109bcc-5c80-4686-b1c3-97932c3c94e3</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>manage.py</StartupFile>
     <SearchPath>
@@ -28,24 +29,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DjangoProject1\eng_eng.py" />
-    <Compile Include="homepage\admin.py" />
-    <Compile Include="homepage\models.py" />
-    <Compile Include="homepage\tests.py" />
-    <Compile Include="homepage\urls.py" />
-    <Compile Include="homepage\views.py" />
-    <Compile Include="homepage\__init__.py" />
+    <Compile Include="Trademarks\eng_eng.py" />
+    <Compile Include="Trademarks\admin.py" />
+    <Compile Include="Trademarks\models.py" />
+    <Compile Include="Trademarks\views.py" />
     <Compile Include="manage.py" />
-    <Compile Include="DjangoProject1\__init__.py" />
-    <Compile Include="DjangoProject1\settings.py" />
-    <Compile Include="DjangoProject1\urls.py" />
-    <Compile Include="DjangoProject1\wsgi.py" />
-    <Compile Include="polls\admin.py" />
-    <Compile Include="polls\models.py" />
-    <Compile Include="polls\tests.py" />
-    <Compile Include="polls\urls.py" />
-    <Compile Include="polls\views.py" />
-    <Compile Include="polls\__init__.py" />
+    <Compile Include="Trademarks\__init__.py" />
+    <Compile Include="Trademarks\settings.py" />
+    <Compile Include="Trademarks\urls.py" />
+    <Compile Include="Trademarks\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
@@ -60,26 +52,19 @@
     </WebPiReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DjangoProject1\" />
-    <Folder Include="homepage\" />
-    <Folder Include="homepage\static\" />
-    <Folder Include="homepage\static\css\" />
-    <Folder Include="homepage\static\images\" />
-    <Folder Include="homepage\templates\" />
-    <Folder Include="polls\" />
-    <Folder Include="polls\templates\" />
-    <Folder Include="polls\templates\polls\" />
+    <Folder Include="Trademarks\" />
+    <Folder Include="Trademarks\static\" />
+    <Folder Include="Trademarks\static\css\" />
+    <Folder Include="Trademarks\static\images\" />
+    <Folder Include="Trademarks\templates\" />
+    <Folder Include="Trademarks\__pycache__\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="homepage\static\css\main.css" />
-    <Content Include="homepage\templates\home.html" />
-    <Content Include="homepage\static\images\lang.ico" />
-    <Content Include="homepage\static\images\logo.png" />
-    <Content Include="homepage\templates\index.html" />
-    <Content Include="homepage\templates\search.html" />
-    <Content Include="polls\templates\polls\detail.html" />
-    <Content Include="polls\templates\polls\index.html" />
-    <Content Include="polls\templates\polls\results.html" />
+    <Content Include="Trademarks\static\css\main.css" />
+    <Content Include="Trademarks\static\images\lang.ico" />
+    <Content Include="Trademarks\static\images\logo.png" />
+    <Content Include="Trademarks\templates\index.html" />
+    <Content Include="Trademarks\templates\search.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>

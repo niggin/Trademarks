@@ -3,8 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
-from homepage.models import Word
-from DjangoProject1.eng_eng import *
+from Trademarks.models import Word
+from Trademarks.eng_eng import *
 
 def home(request):
     context = {}

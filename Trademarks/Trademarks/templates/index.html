@@ -15,7 +15,7 @@
                 <div id="content">
                         <div id="search">
                                 <div id="lang"></div>
-                                <form action="{% url 'homepage:search' %}" method="post">
+                                <form action="{% url 'search' %}" method="post">
                                         {% csrf_token %}
                                         <input type="text" name="findme" placeholder="Trade word" />
                                         <button type="submit">Trade it!</button>

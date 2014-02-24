@@ -1,4 +1,4 @@
-# Django settings for DjangoProject1 project.
+# Django settings for Trademarks project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -9,10 +9,13 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'databasa',                      # Or path to database file if using sqlite3.
+        'NAME': 'data.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -70,6 +73,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -100,17 +104,17 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'DjangoProject1.urls'
+ROOT_URLCONF = 'Trademarks.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'DjangoProject1.wsgi.application'
+WSGI_APPLICATION = 'Trademarks.wsgi.application'
 import os
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    'C:/Users/rubik_000/Documents/Visual Studio 2013/Projects/DjangoProject1/DjangoProject1/templates/admin/templates',
+    os.path.join(BASE_DIR, 'templates'),
     #os.path.join(SCRIPT_DIR, 'templates')
 )
 
@@ -121,10 +125,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
-    'homepage',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'Trademarks',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

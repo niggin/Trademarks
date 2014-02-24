@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from homepage.models import Word
+from Trademarks.models import Word
 
 class WordAdmin(admin.ModelAdmin):
     fieldssets = [
